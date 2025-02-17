@@ -1,12 +1,13 @@
+import type { Colors } from '@/configs/color'
+import type { WithString } from '@/utils/types'
 import type { ImageStyle } from 'react-native'
+
 import { type DimensionValue, type FlexStyle, type TextStyle, type ViewStyle } from 'react-native'
 
-import type { Colors } from '@/configs/color'
 import { type Radii, radius } from '@/configs/radius'
 import { spacing, type Spacings } from '@/configs/spacing'
 import { fontSize, type FontSizes, lineHeight, type LineHeights } from '@/configs/typography'
 import { color } from '@/utils/colors'
-import type { WithString } from '@/utils/types'
 
 type ThemeSpacingProp<V, A = never> = Spacings | V | (A extends never ? never : A)
 

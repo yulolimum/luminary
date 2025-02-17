@@ -1,8 +1,9 @@
+import type { ThemeViewStyleProps } from '@luminary/theme'
 import type { ComponentProps, ComponentType } from 'react'
-import { View, type ViewProps } from 'react-native'
+import type { ViewProps } from 'react-native'
 
-import { useThemeStyleProps } from '@/hooks/useThemeStyleProps'
-import type { ThemeViewStyleProps } from '@/utils/style-props'
+import { useThemeStyleProps } from '@luminary/theme'
+import { View } from 'react-native'
 
 type BoxProps<C extends ComponentType> = Omit<ComponentProps<C>, 'as'> & {
   as?: C

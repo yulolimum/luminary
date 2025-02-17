@@ -1,8 +1,8 @@
+import type { SemanticKeys, SinglePrimitiveKeys, TuplePrimitiveKeys } from '@/configs/color'
+import type { Range } from '@/utils/types'
 import type { ColorValue } from 'react-native'
 
-import type { SemanticKeys, SinglePrimitiveKeys, TuplePrimitiveKeys } from '@/configs/color'
 import { type Colors, defaultShade, hexAlphaSuffixes, primitiveColors, semanticColors } from '@/configs/color'
-import type { Range } from '@/utils/types'
 
 function color(path: Colors | undefined | null) {
   if (!path) return

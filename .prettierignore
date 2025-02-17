@@ -1,0 +1,8 @@
+.notes/
+.old/
+.yarn/
+node_modules/
+packages/cms/.next
+packages/mobile/ios
+packages/mobile/android
+packages/mobile/.expo

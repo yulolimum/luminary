@@ -1235,10 +1235,10 @@ __metadata:
   dependencies:
     "@tsconfig/react-native": "npm:3.0.5"
     prettier: "npm:3.5.1"
-    tsup: "npm:^8.3.6"
-    tsx: "npm:^4.19.2"
+    tsup: "npm:8.3.6"
+    tsx: "npm:4.19.2"
     typescript: "npm:5.7.3"
-    zx: "npm:^8.3.2"
+    zx: "npm:8.3.2"
   languageName: unknown
   linkType: soft
 
@@ -1862,7 +1862,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsup@npm:^8.3.6":
+"tsup@npm:8.3.6":
   version: 8.3.6
   resolution: "tsup@npm:8.3.6"
   dependencies:
@@ -1903,7 +1903,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsx@npm:^4.19.2":
+"tsx@npm:4.19.2":
   version: 4.19.2
   resolution: "tsx@npm:4.19.2"
   dependencies:
@@ -2040,7 +2040,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zx@npm:^8.3.2":
+"zx@npm:8.3.2":
   version: 8.3.2
   resolution: "zx@npm:8.3.2"
   dependencies:

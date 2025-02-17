@@ -1,1 +1,6 @@
 # luminary
+
+
+
+
+`./scripts/setup`

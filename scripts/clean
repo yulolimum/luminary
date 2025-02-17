@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e # exit when any command fails
+
+yarn workspaces foreach --all --parallel run clean
+find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +

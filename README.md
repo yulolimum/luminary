@@ -1,6 +1,3 @@
 # luminary
 
-
-
-
 `./scripts/setup`

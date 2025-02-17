@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+set -e 
+
+# Runs eslint (and eslint prettier plugin) for the specified extensions.
+yarn eslint . --fix --cache
+
+# Additionally format files outside of eslint's scope.
+yarn prettier --write "**/*.{json,md,yml,yaml}" --cache
+
+# Per project formatting scripts
+yarn workspaces foreach --all --parallel run format

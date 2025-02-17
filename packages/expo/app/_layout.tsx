@@ -1,12 +1,11 @@
 import 'react-native-reanimated'
 
 import { DefaultTheme, ThemeProvider } from '@react-navigation/native'
-import { Stack } from 'expo-router'
-import * as SplashScreen from 'expo-splash-screen'
+import { Slot } from 'expo-router'
 import { StatusBar } from 'expo-status-bar'
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync()
+// SplashScreen.preventAutoHideAsync()
 
 export default function RootLayout() {
   // // const colorScheme = useColorScheme()
@@ -15,10 +14,8 @@ export default function RootLayout() {
   // // })
 
   // useEffect(() => {
-  //   if (loaded) {
-  //     SplashScreen.hideAsync()
-  //   }
-  // }, [loaded])
+  //   SplashScreen.hideAsync()
+  // }, [])
 
   // if (!loaded) {
   //   return null
@@ -26,10 +23,8 @@ export default function RootLayout() {
 
   return (
     <ThemeProvider value={DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="+not-found" />
-      </Stack>
       <StatusBar style="auto" />
+      <Slot />
     </ThemeProvider>
   )
 }

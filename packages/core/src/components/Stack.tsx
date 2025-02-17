@@ -3,7 +3,7 @@ import type { ComponentType } from 'react'
 
 import { type ViewProps } from 'react-native'
 
-import { Box, type BoxProps } from '@/components/Box'
+import { Box, type BoxProps } from './Box'
 
 function Stack<C extends ComponentType = ComponentType<ViewProps>>(props: BoxProps<C>) {
   return <Box {...$defaultProps} {...props} />

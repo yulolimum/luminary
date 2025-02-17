@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-import { stylePropKeyMap, stylePropValueMap, type ThemeStyleProps } from '@/utils/style-props'
+import { stylePropKeyMap, stylePropValueMap, type ThemeStyleProps } from '../utils/style-props'
 
 function useThemeStyleProps<P extends ThemeStyleProps>(props: P) {
   return useMemo(() => {
@@ -61,6 +61,7 @@ function useThemeStyleProps<P extends ThemeStyleProps>(props: P) {
     props.h,
     props.mih,
     props.mah,
+    props.aspect,
     props.bw,
     props.bbw,
     props.btw,

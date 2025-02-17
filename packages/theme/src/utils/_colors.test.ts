@@ -1,5 +1,5 @@
-import { defaultShade, hexAlphaSuffixes, primitiveColors, semanticColors } from '@/configs/color'
-import { color, colorWithAlpha } from '@/utils/colors'
+import { defaultShade, hexAlphaSuffixes, primitiveColors, semanticColors } from '../configs/color'
+import { color, colorWithAlpha } from '../utils/colors'
 
 describe('color() function', () => {
   test('should return `undefined` if `path` is falsy', () => {

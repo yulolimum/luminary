@@ -1,13 +1,13 @@
-import type { Colors } from '@/configs/color'
-import type { WithString } from '@/utils/types'
+import type { Colors } from '../configs/color'
+import type { WithString } from '../utils/types'
 import type { ImageStyle } from 'react-native'
 
 import { type DimensionValue, type FlexStyle, type TextStyle, type ViewStyle } from 'react-native'
 
-import { type Radii, radius } from '@/configs/radius'
-import { spacing, type Spacings } from '@/configs/spacing'
-import { fontSize, type FontSizes, lineHeight, type LineHeights } from '@/configs/typography'
-import { color } from '@/utils/colors'
+import { type Radii, radius } from '../configs/radius'
+import { spacing, type Spacings } from '../configs/spacing'
+import { fontSize, type FontSizes, lineHeight, type LineHeights } from '../configs/typography'
+import { color } from '../utils/colors'
 
 type ThemeSpacingProp<V, A = never> = Spacings | V | (A extends never ? never : A)
 
@@ -102,6 +102,8 @@ type FlexStyleProps = {
   mih?: ThemeSpacingProp<DimensionValue>
   /** Maximum height property */
   mah?: ThemeSpacingProp<DimensionValue>
+  /** Aspect property */
+  aspect?: FlexStyle['aspectRatio']
 
   /** Border width property */
   bw?: ViewStyle['borderWidth']
@@ -222,6 +224,7 @@ const stylePropKeyMap: Record<keyof ThemeStyleProps, keyof TextStyle | keyof Ima
   h: 'height',
   mih: 'minHeight',
   mah: 'maxHeight',
+  aspect: 'aspectRatio',
 
   // border
   bw: 'borderWidth',

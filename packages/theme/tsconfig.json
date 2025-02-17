@@ -2,9 +2,6 @@
   "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
     "jsx": "react-native",
-    "exactOptionalPropertyTypes": false,
-    "paths": {
-      "@/*": ["./src/*"]
-    }
+    "exactOptionalPropertyTypes": false
   }
 }

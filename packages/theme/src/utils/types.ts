@@ -7,4 +7,6 @@ type Range<
   ? Acc | S | E
   : Range<S, E, [...Arr, 1], Arr[S] extends undefined ? Acc : Acc | Arr['length']>
 
-export type { Range }
+type WithString = string & {}
+
+export type { Range, WithString }

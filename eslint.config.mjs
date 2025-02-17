@@ -8,7 +8,7 @@ import tseslint from 'typescript-eslint'
 export default tseslint.config(
   // global settings
   {
-    ignores: ['.yarn/**', 'node_modules/**', 'packages/*/node_modules/**'],
+    ignores: ['.tmp/**', '.yarn/**', 'node_modules/**', 'packages/*/node_modules/**'],
   },
   {
     languageOptions: { globals: { ...globals.browser, ...globals.node, node: true, NodeJS: true } },
@@ -40,7 +40,7 @@ export default tseslint.config(
       parserOptions: {
         projectService: true,
         tsconfigRootDir: process.cwd(),
-        allowDefaultProject: ['packages/app/**', 'packages/core/**', 'packages/theme/**'],
+        allowDefaultProject: ['packages/expo/**', 'packages/core/**', 'packages/theme/**'],
       },
     },
     rules: {
@@ -65,9 +65,8 @@ export default tseslint.config(
   // react
   {
     files: ['**/*.{tsx,jsx}'],
-    plugins: { react: react.configs.flat.recommended.plugins.react },
+    ...react.configs.flat['recommended'],
     rules: {
-      ...react.configs.flat.recommended.rules,
       'react/react-in-jsx-scope': 'off',
       'react/jsx-uses-react': 'off',
       'react/prop-types': 'off',

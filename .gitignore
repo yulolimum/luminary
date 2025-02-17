@@ -10,3 +10,6 @@
 # cache
 node_modules
 .eslintcache
+
+# misc
+.tmp

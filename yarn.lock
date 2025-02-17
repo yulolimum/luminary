@@ -2388,6 +2388,83 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@luminary/core@workspace:packages/core":
+  version: 0.0.0-use.local
+  resolution: "@luminary/core@workspace:packages/core"
+  dependencies:
+    "@tsconfig/strictest": "npm:^2.0.5"
+  languageName: unknown
+  linkType: soft
+
+"@luminary/expo@workspace:packages/expo":
+  version: 0.0.0-use.local
+  resolution: "@luminary/expo@workspace:packages/expo"
+  dependencies:
+    "@babel/core": "npm:^7.25.2"
+    "@expo/vector-icons": "npm:^14.0.2"
+    "@react-navigation/bottom-tabs": "npm:^7.2.0"
+    "@react-navigation/native": "npm:^7.0.14"
+    "@types/jest": "npm:^29.5.12"
+    "@types/react": "npm:~18.3.12"
+    "@types/react-test-renderer": "npm:^18.3.0"
+    expo: "npm:~52.0.35"
+    expo-blur: "npm:~14.0.3"
+    expo-constants: "npm:~17.0.6"
+    expo-font: "npm:~13.0.3"
+    expo-haptics: "npm:~14.0.1"
+    expo-linking: "npm:~7.0.5"
+    expo-router: "npm:~4.0.17"
+    expo-splash-screen: "npm:~0.29.22"
+    expo-status-bar: "npm:~2.0.1"
+    expo-symbols: "npm:~0.2.2"
+    expo-system-ui: "npm:~4.0.8"
+    expo-web-browser: "npm:~14.0.2"
+    jest: "npm:^29.2.1"
+    jest-expo: "npm:~52.0.4"
+    react: "npm:18.3.1"
+    react-dom: "npm:18.3.1"
+    react-native: "npm:0.76.7"
+    react-native-gesture-handler: "npm:~2.20.2"
+    react-native-reanimated: "npm:~3.16.1"
+    react-native-safe-area-context: "npm:4.12.0"
+    react-native-screens: "npm:~4.4.0"
+    react-native-web: "npm:~0.19.13"
+    react-native-webview: "npm:13.12.5"
+    react-test-renderer: "npm:18.3.1"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
+
+"@luminary/theme@workspace:packages/theme":
+  version: 0.0.0-use.local
+  resolution: "@luminary/theme@workspace:packages/theme"
+  dependencies:
+    "@tsconfig/strictest": "npm:^2.0.5"
+  languageName: unknown
+  linkType: soft
+
+"@luminary/ui@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@luminary/ui@workspace:."
+  dependencies:
+    "@eslint/js": "npm:9.20.0"
+    "@tsconfig/strictest": "npm:2.0.5"
+    eslint: "npm:9.20.1"
+    eslint-config-prettier: "npm:10.0.1"
+    eslint-plugin-prettier: "npm:5.2.3"
+    eslint-plugin-react: "npm:7.37.4"
+    eslint-plugin-simple-import-sort: "npm:12.1.1"
+    globals: "npm:15.15.0"
+    prettier: "npm:3.5.1"
+    prettier-plugin-packagejson: "npm:2.5.8"
+    tsup: "npm:8.3.6"
+    tsx: "npm:4.19.2"
+    typescript: "npm:5.7.3"
+    typescript-eslint: "npm:8.24.0"
+    zx: "npm:8.3.2"
+  languageName: unknown
+  linkType: soft
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -3049,7 +3126,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsconfig/strictest@npm:2.0.5":
+"@tsconfig/strictest@npm:2.0.5, @tsconfig/strictest@npm:^2.0.5":
   version: 2.0.5
   resolution: "@tsconfig/strictest@npm:2.0.5"
   checksum: 10c0/cfc86da2d57f7b4b0827701b132c37a4974284e5c40649656c0e474866dfd8a69f57c6718230d8a8139967e2a95438586b8224c13ab0ff9d3a43eda771c50cc4
@@ -3681,45 +3758,6 @@ __metadata:
   checksum: 10c0/57b06ae984bc32a0d22592c87384cd88fe4511b1dd7581497831c56d41939c8a001b28e7b853e1450f2bf61992dfcaa8ae2d0d161a0a90c4fb631ef07098fbac
   languageName: node
   linkType: hard
-
-"app@workspace:packages/expo":
-  version: 0.0.0-use.local
-  resolution: "app@workspace:packages/expo"
-  dependencies:
-    "@babel/core": "npm:^7.25.2"
-    "@expo/vector-icons": "npm:^14.0.2"
-    "@react-navigation/bottom-tabs": "npm:^7.2.0"
-    "@react-navigation/native": "npm:^7.0.14"
-    "@types/jest": "npm:^29.5.12"
-    "@types/react": "npm:~18.3.12"
-    "@types/react-test-renderer": "npm:^18.3.0"
-    expo: "npm:~52.0.35"
-    expo-blur: "npm:~14.0.3"
-    expo-constants: "npm:~17.0.6"
-    expo-font: "npm:~13.0.3"
-    expo-haptics: "npm:~14.0.1"
-    expo-linking: "npm:~7.0.5"
-    expo-router: "npm:~4.0.17"
-    expo-splash-screen: "npm:~0.29.22"
-    expo-status-bar: "npm:~2.0.1"
-    expo-symbols: "npm:~0.2.2"
-    expo-system-ui: "npm:~4.0.8"
-    expo-web-browser: "npm:~14.0.2"
-    jest: "npm:^29.2.1"
-    jest-expo: "npm:~52.0.4"
-    react: "npm:18.3.1"
-    react-dom: "npm:18.3.1"
-    react-native: "npm:0.76.7"
-    react-native-gesture-handler: "npm:~2.20.2"
-    react-native-reanimated: "npm:~3.16.1"
-    react-native-safe-area-context: "npm:4.12.0"
-    react-native-screens: "npm:~4.4.0"
-    react-native-web: "npm:~0.19.13"
-    react-native-webview: "npm:13.12.5"
-    react-test-renderer: "npm:18.3.1"
-    typescript: "npm:^5.3.3"
-  languageName: unknown
-  linkType: soft
 
 "application-config-path@npm:^0.1.0":
   version: 0.1.1
@@ -8734,28 +8772,6 @@ __metadata:
   checksum: 10c0/89b2ef2ef45f543011e38737b8a8622a2f8998cddf0e5437174ef8f1f70a8b9d14a918ab3e232cb3ba343b7abddffa667f0b59075b2b80e6b4d63c3de6127482
   languageName: node
   linkType: hard
-
-"luminary@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "luminary@workspace:."
-  dependencies:
-    "@eslint/js": "npm:9.20.0"
-    "@tsconfig/strictest": "npm:2.0.5"
-    eslint: "npm:9.20.1"
-    eslint-config-prettier: "npm:10.0.1"
-    eslint-plugin-prettier: "npm:5.2.3"
-    eslint-plugin-react: "npm:7.37.4"
-    eslint-plugin-simple-import-sort: "npm:12.1.1"
-    globals: "npm:15.15.0"
-    prettier: "npm:3.5.1"
-    prettier-plugin-packagejson: "npm:2.5.8"
-    tsup: "npm:8.3.6"
-    tsx: "npm:4.19.2"
-    typescript: "npm:5.7.3"
-    typescript-eslint: "npm:8.24.0"
-    zx: "npm:8.3.2"
-  languageName: unknown
-  linkType: soft
 
 "make-dir@npm:^2.0.0, make-dir@npm:^2.1.0":
   version: 2.1.0

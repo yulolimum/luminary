@@ -1,5 +1,5 @@
 {
-  "name": "luminary",
+  "name": "@luminary/ui",
   "type": "module",
   "workspaces": [
     "packages/*"

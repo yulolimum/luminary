@@ -1,0 +1,7 @@
+{
+  "name": "@luminary/theme",
+  "devDependencies": {
+    "@tsconfig/strictest": "^2.0.5"
+  },
+  "packageManager": "yarn@4.6.0"
+}

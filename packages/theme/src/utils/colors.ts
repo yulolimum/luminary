@@ -2,8 +2,7 @@ import type { ColorValue } from 'react-native'
 
 import type { SemanticKeys, SinglePrimitiveKeys, TuplePrimitiveKeys } from '@/configs/color'
 import { type Colors, defaultShade, hexAlphaSuffixes, primitiveColors, semanticColors } from '@/configs/color'
-
-import type { Range } from './types'
+import type { Range } from '@/utils/types'
 
 function color(path: Colors | undefined | null) {
   if (!path) return
@@ -43,8 +42,8 @@ function color(path: Colors | undefined | null) {
   return path as ColorValue
 }
 
-function colorWithAlpha(path: Colors | undefined | null | `${string}` | `rgb${string}`, opacity: Range<0, 100>) {
-  // @ts-expect-error -- `${string}` is correctly not allowed by color, it'll pass through
+function colorWithAlpha(path: Colors | undefined | null | `#${string}` | `rgb${string}`, opacity: Range<0, 100>) {
+  // @ts-expect-error -- `#${string}` and `rgb${string}` is correctly not allowed by color, it'll pass through
   const c = color(path) as string
 
   const normalizedOpacity = Math.min(Math.max(opacity, 0), 100)

@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 
 import { stylePropKeyMap, stylePropValueMap, type ThemeStyleProps } from '@/utils/style-props'
 
-export function useThemeStyleProps<P extends ThemeStyleProps>(props: P) {
+function useThemeStyleProps<P extends ThemeStyleProps>(props: P) {
   return useMemo(() => {
     const styles: Record<string, any> = {}
 
@@ -85,3 +85,5 @@ export function useThemeStyleProps<P extends ThemeStyleProps>(props: P) {
     props.tint,
   ])
 }
+
+export { useThemeStyleProps }

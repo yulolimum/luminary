@@ -163,10 +163,10 @@ type ImageStyleProps = {
   tint?: Colors
 }
 
-export type ThemeStyleProps = FlexStyleProps & ViewStyleProps & TextStyleProps & ImageStyleProps
-export type ThemeTextStyleProps = FlexStyleProps & TextStyleProps & ViewStyleProps
-export type ThemeImageStyleProps = FlexStyleProps & ImageStyleProps & Omit<ViewStyleProps, 'events'>
-export type ThemeViewStyleProps = FlexStyleProps & ViewStyleProps
+type ThemeStyleProps = FlexStyleProps & ViewStyleProps & TextStyleProps & ImageStyleProps
+type ThemeTextStyleProps = FlexStyleProps & TextStyleProps & ViewStyleProps
+type ThemeImageStyleProps = FlexStyleProps & ImageStyleProps & Omit<ViewStyleProps, 'events'>
+type ThemeViewStyleProps = FlexStyleProps & ViewStyleProps
 
 const stylePropKeyMap: Record<keyof ThemeStyleProps, keyof TextStyle | keyof ImageStyle> = {
   // margin
@@ -309,3 +309,4 @@ function stylePropValueMap(key: keyof ThemeStyleProps, value: ThemeStyleProps[ke
 }
 
 export { stylePropKeyMap, stylePropValueMap }
+export type { ThemeImageStyleProps, ThemeStyleProps, ThemeTextStyleProps, ThemeViewStyleProps }
